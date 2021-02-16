@@ -1,0 +1,543 @@
+:root {
+    --primary-color: #7cbc27;
+    --secondary-color: #7bbc27b7;
+    --terciary-color: #7bbc2727;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    text-align: center;
+    background-color: var(--primary-color);
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1px;
+    height: 17vh;
+}
+
+header div span .material-icons:hover {
+    color: black;
+    animation: iconosMoviles 1.5s forwards;
+}
+
+#nombreWeb {
+    align-self: center;
+}
+
+#datos {
+    align-self: center;
+    justify-self: center;
+    font-size: 1rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+   
+}
+
+#datos div {
+    display: flex;
+    align-items: center;  
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0 auto;
+}
+
+header h3 {
+    text-align: center;
+    font-size: 1rem;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.icono {
+    width: 9vh;
+    height: 9vh;
+    align-self: center;
+    justify-self: center;
+}
+
+nav {
+    border: 1px solid var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+nav ul {
+    padding: 0;
+    margin: 5px;
+}
+
+nav ul li {
+    list-style: none;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    align-self: center;
+    border-style: solid;
+    padding: 6px;
+    margin: 6px;
+    box-shadow: 2px 2px 2px 4px black;
+    border: 1px solid white;
+    background-color: var(--secondary-color);
+}
+
+nav ul li:hover {
+    background-color: var(--primary-color);
+    transition-duration: 2s;
+}
+
+#covid {
+    box-shadow: 2px 2px 2px 4px black;
+    background-color: red;
+    animation-name: coronavirus;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes coronavirus {
+    from {
+        background-color: rgba(0, 0, 255, 0.746);
+    }
+    to {
+        background-color: red;
+    }
+}
+
+.material-icons {
+    color: black;
+    font-size: 30px;
+}
+
+.material-icons:hover {
+    color: var(--primary-color);
+    animation: iconosMoviles 1.5s forwards;
+}
+
+.precio:hover {
+    *margin: 3px;
+   box-shadow: 2px 2px 2px 5px var(--primary-color);
+ 
+    
+}
+.precioEuro:hover{
+    color:black;
+
+}
+
+.precio {
+    display: flex;
+    flex-flow: column;
+    align-self: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+.precio .material-icons {
+    font-size: 3rem;
+    animation: none;
+}
+
+.precio div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+header div span.material-icons:hover {
+    color: black;
+    animation: iconosMoviles 1.5s forwards;
+}
+
+@keyframes iconosMoviles {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(720deg);
+    }
+}
+
+.cuerpo {
+    background-color: var(--terciary-color);
+}
+
+.fotosCasas {
+    margin: 10px;
+    padding: 20px;
+}
+
+.fotosCasas h2 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 10px;
+}
+
+.fotosCasas:hover {
+    *margin: 10px;
+    box-shadow: 2px 2px 2px 5px var(--primary-color);
+    transition: 1s;
+}
+.formulario:hover {
+    *margin: 10px;
+    box-shadow: 2px 2px 2px 5px var(--primary-color);
+    transition: 1s;
+}
+.formulario{
+    margin: 20px;
+    padding: 10px;
+}
+
+#golf:hover {
+    color: grey;
+}
+
+.slider {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.slider img {
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
+}
+
+#caracteristicas {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 5px
+}
+
+.infoCasa {
+    margin: 20px;
+    padding: 10px;
+}
+
+.infoCasa:hover {
+    *margin: 3px;
+    box-shadow: 2px 2px 2px 5px var(--primary-color);
+    transition: 1s;
+}
+
+.infoCasa h3 {
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    align-self: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.descripcion {
+    margin: 20px;
+    padding: 10px;
+}
+
+.descripcion:hover {
+    *margin: 3px;
+    box-shadow: 2px 2px 2px 5px var(--primary-color);
+    transition: 1s;
+}
+
+.descripcion h3 {
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    align-self: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.descripcion p {
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
+    font-weight: bold;
+}
+form{
+    display: flex;
+    flex-flow: column;
+    margin: 2px;
+    padding: 2px;
+
+}
+button[type="submit"],button[type="reset"]{
+    margin: 1px;
+    padding: 1px; 
+    font-size: 1.5rem;
+    
+}
+input[type="radio"]{
+    display: inline;
+
+    
+}
+.botones{
+    justify-content: center;
+    text-align: center;
+    margin: 1px;
+    padding: 15px;
+    font-weight: bold;
+
+}
+
+ .formulario h2 {
+    text-align: center;
+    align-self: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+form label{
+    font-weight: bold;
+    padding: 3px;
+    text-align: left;
+    margin: 5px;
+}
+form div{
+    font-weight: bold;
+    padding: 3px;
+    text-align: left;
+    margin: 5px;
+  
+
+}
+.textArea{
+    text-align: center;
+   
+}
+input:not([type="radio"]), select, textarea{
+    display: block;
+    width: 100%;
+}
+.observaciones {
+   
+    margin: 8px;
+    display: block;
+    text-align: center;
+}
+
+input::placeholder {
+    color: rgba(88, 79, 79, 0.664);
+    font-style: italic;
+}
+
+input:required {
+    border: 3px solid var(--secondary-color);
+    box-shadow: var(--secondary-color);
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:focus {
+    background-color: var(--secondary-color);
+}
+
+select::placeholder {
+    color: rgba(88, 79, 79, 0.664);
+    font-style: italic;
+}
+
+select:required {
+    border: 3px solid var(--secondary-color);
+    box-shadow: var(--secondary-color);
+}
+
+select:invalid {
+    border-color: red;
+}
+
+select:focus {
+    background-color: var(--secondary-color);
+}
+
+aside {
+    background-color: var(--terciary-color);
+}
+
+aside h2 {
+    text-align: center;
+    padding: 0;
+}
+
+aside div {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+}
+
+aside div a {
+    list-style: none;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    align-self: center;
+    border-style: solid;
+    padding: 6px;
+    margin: 6px;
+    border-color: 1px solid var(--secondary-color);
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+aside div a:hover {
+    box-shadow: 2px 2px 2px 4px black;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    height: 17vh;
+}
+
+footer div img {
+    width: 6vh;
+    height: 6vh;
+    padding: 5px;
+}
+
+footer h2 {
+    margin: 5px 0;
+    font-size: 1.3rem;
+}
+.ubi{
+    width: 350px;
+    height: 350px;
+    
+}
+.ubicacion{
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+
+
+}
+
+
+.ubicacion:hover {
+    *margin: 3px;
+    box-shadow: 2px 2px 2px 5px var(--primary-color);
+    transition: 1s;
+}
+
+.ubicacion h3 {
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    align-self: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+
+
+
+
+@media only screen and (min-width:700px) {
+    header #nombreWeb h1 {
+        font-size: 3rem;
+    }
+    nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        border: 1px solid #7cbc27;
+    }
+    nav ul {
+        display: flex;
+        flex-flow: nowrap;
+        width: 100%;
+        justify-content: center;
+    }
+    nav ul li {
+        width: 19%;
+        font-size: .75rem;
+    }
+    nav ul li:hover {
+        cursor: pointer;
+        background-color: blue;
+        color: white;
+    }
+    .ubi{
+        width:500px;
+        height: 450px;
+    }
+    
+    aside {
+        background-color: var(--terciary-color);
+    }
+    .cuerpo {
+        display: grid;
+        grid-template-columns: 75% 25%;
+    }
+   form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }  
+    .textArea{
+        grid-column: span 2;
+    }
+    @media only screen and (min-width:1320px) {
+        #datos {
+            font-size: 1rem;
+            padding: 2px;
+        }
+        nav {
+            display: grid;
+            grid-template-columns: 1fr, 1fr, 1fr;
+            border: 1px solid var(--primary-color);
+        }
+        nav ul {
+            display: flex;
+            flex-flow: nowrap;
+            flex-direction: row;
+            justify-self: center;
+        }
+        nav ul li {
+            width: 15%;
+            font-size: 1rem;
+        }
+        .ubi{
+            width:700px;
+            height: 450px;
+
+        }
+    }
+}

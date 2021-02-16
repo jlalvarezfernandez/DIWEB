@@ -1,0 +1,448 @@
+:root {
+    --primary-color: #7cbc27;
+    --secondary-color: #7bbc27b7;
+    --terciary-color: #7bbc2727;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    text-align: center;
+    background-color: var(--primary-color);
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1px;
+    height: 17vh;
+}
+
+header div span.material-icons:hover {
+    color: black;
+    animation: iconosMoviles 1.5s forwards;
+}
+
+#nombreWeb {
+    align-self: center;
+}
+
+#datos {
+    align-self: center;
+    justify-self: center;
+    font-size: 1rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#datos div {
+    display: flex;
+    align-items: center;  
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0 auto;
+}
+
+header h3 {
+    text-align: center;
+    font-size: 1rem;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.icono {
+    width: 9vh;
+    height: 9vh;
+    align-self: center;
+    justify-self: center;
+}
+
+nav {
+    border: 1px solid var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+nav ul {
+    padding: 0;
+    margin: 5px;
+}
+
+nav ul li {
+    list-style: none;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    align-self: center;
+    border-style: solid;
+    padding: 6px;
+    margin: 6px;
+    box-shadow: 2px 2px 2px 4px black;
+    border: 1px solid white;
+    background-color: var(--secondary-color);
+}
+
+.material-icons {
+    color: black;
+}
+
+.material-icons:hover {
+    color: var(--primary-color);
+    animation: iconosMoviles 1.5s forwards;
+}
+
+.precio {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.precio .material-icons {
+    font-size: 2rem;
+}
+
+.casas div {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+} 
+
+@keyframes iconosMoviles {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(720deg);
+    }
+}
+
+nav ul li:hover {
+    transition-duration: 2s;
+}
+
+#covid {
+    box-shadow: 2px 2px 2px 4px black;
+    background-color: red;
+    animation-name: coronavirus;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes coronavirus {
+    from {
+        background-color: rgba(0, 0, 255, 0.746);
+    }
+    to {
+        background-color: red;
+    }
+}
+
+#formulario {
+    background-image: url(../images/fondoSectionFormulario.jpg);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    text-align-last: center;
+    flex-flow: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+input, select {
+    border: 1px solid white;
+    background-color: var(--primary-color);
+}
+
+.imagenMove {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+article a {
+    text-decoration: none;
+}
+
+.casas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.imgInfo {
+    width: 5%;
+    height: 5%;
+    margin: 5px;
+    padding: 5px;
+}
+
+button {
+    text-align: left;
+    background-color: var(--primary-color);
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+span#masInfo{
+    animation: none;
+}
+
+#conteiner {
+    background-color: var(--terciary-color);
+}
+
+aside {
+    background-color: var(--secondary-color);
+}
+
+aside h2 {
+    text-align: center;
+    padding: 0;
+}
+
+aside div {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+}
+
+aside div a {
+    list-style: none;
+    *flex-direction: column;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    align-self: center;
+    border-style: solid;
+    padding: 6px;
+    margin: 6px;
+    border-color: 1px solid var(--secondary-color);
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+aside div a:hover {
+    box-shadow: 2px 2px 2px 4px black;
+}
+
+article {
+    margin: 5px;
+    padding: 2px;
+}
+
+article:hover {
+    transition-duration: 2s;
+    box-shadow: 1px 1px 10px 4px var(--primary-color);
+}
+
+article h3 {
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin: 5px;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    height: 17vh;
+}
+
+footer div img {
+    width: 6vh;
+    height: 6vh;
+    padding: 5px;
+}
+
+footer h2 {
+    margin: 5px 0;
+    font-size: 1.3rem;
+}
+
+#masInfo:hover {
+    color: black;
+}
+
+@media only screen and (min-width:700px) {
+    header #nombreWeb h1 {
+        font-size: 3rem;
+    }
+    
+    .enlaceFoto {
+        display: flex;
+        flex-grow: 5;
+    }
+  
+    .articuloConFoto {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #7cbc27;
+    }
+  
+    nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        border: 1px solid #7cbc27;
+    }
+    nav ul {
+        display: flex;
+        flex-flow: nowrap;
+        
+        width: 100%;
+        justify-content: center;
+    }
+    nav ul li{
+        width: 19%;
+        font-size: .75rem;
+    }
+    nav ul li:hover{
+        cursor: pointer;
+        background-color: blue;
+        color: white;
+    }
+    #formulario {
+        background-image: url(../images/fondoSectionFormulario.jpg);
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        color: white;
+        font-weight: bold;
+        grid-column: span 2;
+        padding: 8%;
+    }
+ 
+    label {
+        font-size: 1.5rem;
+        text-align-last: center;
+        justify-content: center;
+    }
+   
+    #todoCasas {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 1%;
+        padding: 1%;
+    }
+    #conteiner {
+        display: grid;
+        grid-template-columns: 75% 25%;
+        background-color: var(--terciary-color);
+    }
+    .imagenMove {
+        display: flex;
+        flex-grow: 1;
+        *height: 50%;
+        width: 100%;
+        padding: 4px;
+        margin: 1px;
+        border: 1px solid black;
+        background-color: var(--primary-color);
+        object-fit: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    article {
+        border: 1px solid yellowgreen;
+    }
+    aside {
+        background-color: var(--terciary-color);
+    }
+}
+
+@media only screen and (min-width:1340px) {
+     #datos {
+        font-size: 1rem;
+    } 
+
+    nav {
+        display: grid;
+        grid-template-columns: 1fr, 1fr, 1fr;
+        border: 1px solid var(--primary-color);
+    }
+
+    nav ul {
+        display: flex;
+        flex-flow: nowrap;
+        flex-direction: row;
+        justify-self: center;
+    }
+
+    nav ul li{
+        width: 15%;
+        font-size: 1rem;
+    }
+
+    #formulario {
+        background-image: url(../images/fondoSectionFormulario.jpg);
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        color: white;
+        font-weight: bold;
+    }
+
+    form {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        text-align-last: center;
+        justify-content: space-between;
+    }
+
+    label {
+        font-size: 1.2rem;
+        text-align-last: center;
+        justify-content: center;
+    }
+
+    #todoCasas {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 1%;
+        padding: 1%;
+    }
+}
